@@ -1,0 +1,80 @@
+* {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    color: black;
+}
+
+#btn-start {
+    font-family: 'Schoolbell', cursive;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    background-color: mediumspringgreen;
+    letter-spacing: 0.1rem;
+    border: none;
+
+    -webkit-box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,0.8);
+    box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,0.8);
+}
+
+.menu {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.boxMargin {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    letter-spacing: 0.2rem;
+    height: 100%;
+
+    background: url('resources/images/notebook-paper-o.png') no-repeat left top scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#boxTitle {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.playground {
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+#heroBack {
+    background-color: darkgrey;
+}
+
+#subt {
+    margin-bottom: -1rem;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.playerName {
+    position: relative;
+    top: 0.5rem;
+    z-index: 900;
+}
