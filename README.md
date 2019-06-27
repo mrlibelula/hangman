@@ -1,9 +1,5 @@
 # JavaScript Hangman
-> Simple OOP Hangman Game
-
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+> Simple vanilla JS OOP Hangman Game with UI
 
 One player Hangman game, that selects a random word from an array of words (you can add the words you want).
 
