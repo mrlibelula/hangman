@@ -109,7 +109,6 @@ function resetAllVars() {
 function printScore() {
     document.querySelector('#hits').textContent = totalHits;
     document.querySelector('#fails').textContent = fails;
-    // document.querySelector('#time').textContent = time + ' seg.';
     document.querySelector('#score').innerHTML = score + '&nbsp;<i class="fas fa-star is-light"></i>';
 }
 
@@ -137,8 +136,8 @@ function startGame() {
     var isHit = isLetterPresent(selectedLetter);
 
     if(isHit) {
-        // Dont hang
-        // Calculate hits matrix 'word.current_underscore'
+        // Don't hang
+        // Calculate hits
         if(!word.current_underscore.length) {
             // First time
             word.letterArr.forEach(function(letter, key) {
