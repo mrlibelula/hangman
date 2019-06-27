@@ -5,54 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js" integrity="sha256-lIXwkX+X/PT2Ol6jZSAP/VfxI/RROCovmhrS4v1RrJs=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
-    <title>Ahorkado</title>
+    <title>Ahork'ado</title>
 </head>
 <body>
     <div class="hero is-info is-fullheight" id="heroBack">
         <div class="boxMargin">
-            <h1 class="title is-1" id="boxTitle">Ahorkado</h1>
+            <h1 class="title is-1" id="boxTitle">AhorK'ado</h1>
 
             <div class="container">
-                <div id="subt">7 chances!!</div><br>
-
+                <span id="chances">7</span><span id="subt">&nbsp;chances!!</span>
+                <br><br>
+                
                 <div class="column menu">
-                    <div class="button is-rounded is-small" id="btn-start">Empezar</div>
+                    
+                    <div class="buttons has-addons is-centered">
+                        <button id="btn-start" class="button is-rounded is-success">
+                            <span class="icon">
+                               <i class="fas fa-play" id="ico-start"></i>
+                            </span>
+                            <span>Empezar</span>
+                        </button>
+                        <button id="btn-name" class="button is-rounded is-warning">
+                            <span class="icon">
+                               <i class="fas fa-pray" id="ico-name"></i>
+                            </span>
+                            <span>Mi nombre</span>
+                        </button>
+                        <button id="btn-poison" class="button is-rounded is-danger">
+                            <span class="icon">
+                                <i class="fas fa-skull-crossbones" id="ico-dont"></i>
+                            </span>
+                            <span>No tocar</span>
+                        </button>
+                    </div>
+
                 </div>
 
                 <div class="columns">
                     <div class="column">
                         <div class="playerName">
-                            Libe
+                            Evaristo
                         </div>
                         <img id="img" src="resources/images/hm-full.png">
                     </div>
+
                     <div class="column">
-                        <div class="playground">
+                        <div class="playGround">
                             _ _ _ _ _ _
                         </div>
                         
                     </div>
+
+                    <div class="column">
+                        <div class="columns is-mobile" id="dashboard">
+                            <div class="column">
+                                <div class="right">aciertos:</div>
+                                <div class="right">fallos:</div>
+                                <div class="right">tiempo:</div>
+                                <div class="right">puntos:</div>
+                            </div>
+                            <div class="column">
+                                <div class="left" id="hits">2 de 6</div>
+                                <div class="left" id="fails">6</div>
+                                <div class="left" id="time">00:00:00</div>
+                                <div class="left" id="score">950&nbsp;<i class="fas fa-star is-light"></i></div></div>
+                                    
+                            </div>
+        
+                        </div> 
+                    </div>
                 </div>
 
-                <div class="columns is-mobile" id="dashboard">
-                    <div class="column">
-                        <div class="right">aciertos:</div>
-                        <div class="right">fallos:</div>
-                        <div class="right">repeticiones:</div>
-                        <div class="right">tiempo:</div>
+                <div class="msg">
+                    Messages here!!!
+                </div>
+
+                <!-- <div class="column">
+                    <div class="field has-addons has-addons-centered">
+                        <p class="control">
+                            <a class="button is-info btn-cap">Aa</a>
+                        </p>
+                        <p class="control">
+                            <span class="select">
+                                <select class="dropdown-trigger drop-it" id="letter">
+                                    <option class="opt" value="a">a</option>
+                                    <option class="opt" value="b">b</option>
+                                    <option class="opt" value="c">c</option>
+                                    <option class="opt" value="d">d</option>
+                                    <option class="opt" value="e">e</option>
+                                    <option class="opt" value="f">f</option>
+                                    <option class="opt" value="g">g</option>
+                                    <option class="opt" value="h">h</option>
+                                    <option class="opt" value="i">i</option>
+                                    <option class="opt" value="j">j</option>
+                                    <option class="opt" value="k">k</option>
+                                    <option class="opt" value="l">l</option>
+                                    <option class="opt" value="m">m</option>
+                                    <option class="opt" value="n">n</option>
+                                    <option class="opt" value="ñ">ñ</option>
+                                    <option class="opt" value="o">o</option>
+                                    <option class="opt" value="p">p</option>
+                                    <option class="opt" value="q">q</option>
+                                    <option class="opt" value="r">r</option>
+                                    <option class="opt" value="s">s</option>
+                                    <option class="opt" value="t">t</option>
+                                    <option class="opt" value="u">u</option>
+                                    <option class="opt" value="v">v</option>
+                                    <option class="opt" value="w">w</option>
+                                    <option class="opt" value="x">x</option>
+                                    <option class="opt" value="y">y</option>
+                                    <option class="opt" value="z">z</option>
+                                </select> 
+                            </span>
+                        </p>
+                        
+                        <p class="control">
+                            <a class="button is-primary" id="btn-this">
+                            Quiera ésta!
+                            </a>
+                        </p>
+                        </div>
+                </div> -->
+
+                <div class="column">
+                    <div class="field has-addons has-addons-centered">
+                        <p class="control">
+                            <button class="button is-info btn-cap">Aa</button>
+                        </p>
+
+                        <p class="control">
+                            <span>
+                                <select class="dropdown-trigger drop-it" id="letter">
+                                    <option class="opt" value="a">a</option>
+                                    <option class="opt" value="b">b</option>
+                                    <option class="opt" value="c">c</option>
+                                    <option class="opt" value="d">d</option>
+                                    <option class="opt" value="e">e</option>
+                                    <option class="opt" value="f">f</option>
+                                    <option class="opt" value="g">g</option>
+                                    <option class="opt" value="h">h</option>
+                                    <option class="opt" value="i">i</option>
+                                    <option class="opt" value="j">j</option>
+                                    <option class="opt" value="k">k</option>
+                                    <option class="opt" value="l">l</option>
+                                    <option class="opt" value="m">m</option>
+                                    <option class="opt" value="n">n</option>
+                                    <option class="opt" value="ñ">ñ</option>
+                                    <option class="opt" value="o">o</option>
+                                    <option class="opt" value="p">p</option>
+                                    <option class="opt" value="q">q</option>
+                                    <option class="opt" value="r">r</option>
+                                    <option class="opt" value="s">s</option>
+                                    <option class="opt" value="t">t</option>
+                                    <option class="opt" value="u">u</option>
+                                    <option class="opt" value="v">v</option>
+                                    <option class="opt" value="w">w</option>
+                                    <option class="opt" value="x">x</option>
+                                    <option class="opt" value="y">y</option>
+                                    <option class="opt" value="z">z</option>
+                                </select> 
+                            </span>
+                        </p>
+
+                        <p class="control">
+                            <div class="btnSelect">
+                                <button id="btn-this" class="button is-info">quiero ésta letra !</button>
+                            </div>
+                        </p>
                     </div>
-                    <div class="column">
-                        <div class="left" id="aciertos">2</div>
-                        <div class="left" id="fallos">6</div>
-                        <div class="left" id="rep">0</div>
-                        <div class="left" id="tiempo">25</div>
-                    </div>
-                </div>                
-                
+                </div>
+
             </div>
         </div>
     </div>
